@@ -1,0 +1,13 @@
+{
+  "compilerOptions": {
+    "target": "ES6",                       // Compile TypeScript to modern ES6 JavaScript
+    "module": "CommonJS",                  // Use CommonJS module system (used in Node.js)
+    "strict": true,                        // Enable all strict type-checking options
+    "esModuleInterop": true,               // Allow default imports from CommonJS modules
+    "skipLibCheck": true,                  // Skip type checking of .d.ts files (faster builds)
+    "forceConsistentCasingInFileNames": true, // Enforce consistent file name casing (important on Linux/Mac)
+    "outDir": "./dist"                     // Output directory for compiled JS files
+  },
+  "include": ["./taskManager.ts"],         // Only include this specific TypeScript file
+  "exclude": ["node_modules"]              // Don't compile anything inside node_modules
+}
